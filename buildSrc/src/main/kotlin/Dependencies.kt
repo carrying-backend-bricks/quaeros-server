@@ -32,11 +32,13 @@ interface Libraries {
         private const val STARTER_WEBFLUX = "org.springframework.boot:spring-boot-starter-webflux"
         private const val STARTER_VALIDATION = "org.springframework.boot:spring-boot-starter-validation"
         private const val STARTER_R2DBC = "org.springframework.boot:spring-boot-starter-data-r2dbc"
+        private const val STARTER_SECURITY = "org.springframework.boot:spring-boot-starter-security"
 
         override fun dependencies() = listOf(
             STARTER_WEBFLUX to ImplementationType.IMPLEMENTATION,
             STARTER_VALIDATION to ImplementationType.IMPLEMENTATION,
-            STARTER_R2DBC to ImplementationType.IMPLEMENTATION
+            STARTER_R2DBC to ImplementationType.IMPLEMENTATION,
+            STARTER_SECURITY to ImplementationType.IMPLEMENTATION
         )
     }
 
@@ -66,5 +68,17 @@ interface Libraries {
             KOTLINX_REACOR to ImplementationType.IMPLEMENTATION,
             REACTOR_EXTENSIONS to ImplementationType.IMPLEMENTATION
         )
+    }
+
+    object Jwt : Libraries {
+        private const val JWT_API = "io.jsonwebtoken:jjwt-api:${DependencyVersions.JWT_VERSION}"
+        private const val JWT_IMPL = "io.jsonwebtoken:jjwt-impl:${DependencyVersions.JWT_VERSION}"
+        private const val JWT_JACKSON = "io.jsonwebtoken:jjwt-jackson:${DependencyVersions.JWT_VERSION}"
+        override fun dependencies() = listOf(
+            JWT_API to ImplementationType.IMPLEMENTATION,
+            JWT_IMPL to ImplementationType.RUNTIME_ONLY,
+            JWT_JACKSON to ImplementationType.RUNTIME_ONLY
+        )
+
     }
 }

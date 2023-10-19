@@ -27,7 +27,7 @@ tasks {
     compileKotlin {
         kotlinOptions {
             freeCompilerArgs = listOf("-Xjsr305=strict")
-            jvmTarget = "11"
+            jvmTarget = "17"
         }
     }
 
@@ -52,4 +52,5 @@ dependencies {
     implementationDependencies(Libraries.Kotlin)
     implementationDependencies(Libraries.Jackson)
     implementationDependencies(Libraries.Reactor)
+    implementationDependencies(Libraries.Jwt)
 }
