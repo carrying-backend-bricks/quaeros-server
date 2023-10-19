@@ -13,4 +13,7 @@ class QuerySnippetService (
     suspend fun getSnippets(): Flow<SnippetResponse> {
         return snippetRepository.findAll().map { SnippetResponse.of(it) }
     }
+    suspend fun getSnippetById(snippetId: Long): SnippetResponse{
+        return SnippetResponse.of(snippetRepository.findById(snippetId))
+    }
 }

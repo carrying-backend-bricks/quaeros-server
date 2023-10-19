@@ -8,9 +8,9 @@ data class SnippetResponse(
     val code: String
 ) {
     companion object {
-        fun of(snippet: Snippet): SnippetResponse {
+        fun of(snippet: Snippet?): SnippetResponse {
             return SnippetResponse(
-                id = snippet.id,
+                id = snippet!!.id,
                 title = snippet.title,
                 code = snippet.code
             )

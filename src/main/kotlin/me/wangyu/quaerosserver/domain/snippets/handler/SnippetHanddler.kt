@@ -28,4 +28,8 @@ class SnippetHandler(
         return ServerResponse.status(HttpStatus.OK).bodyAndAwait(snippets)
     }
 
+    suspend fun getSnippetById(request: ServerRequest): ServerResponse {
+        return ServerResponse.status(HttpStatus.OK).bodyValueAndAwait(querySnippetService.getSnippetById(request.pathVariable("id").toLong()))
+    }
+
 }
