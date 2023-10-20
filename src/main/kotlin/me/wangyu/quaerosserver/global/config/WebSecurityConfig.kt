@@ -45,12 +45,8 @@ class WebSecurityConfig (
             .pathMatchers(HttpMethod.GET, "/snippet").permitAll()
             .pathMatchers(HttpMethod.GET, "/snippet/{id}").permitAll()
             .pathMatchers(HttpMethod.POST, "/snippet").authenticated()
+            .pathMatchers(HttpMethod.POST,"/user").permitAll()
             .anyExchange().authenticated()
             .and().build()
-    }
-
-    @Bean
-    fun passwordEncoder(): PasswordEncoder? {
-        return BCryptPasswordEncoder()
     }
 }
