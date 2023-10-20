@@ -1,7 +1,9 @@
 package me.wangyu.quaerosserver.domain.user.persistence.domain
 
+import me.wangyu.quaerosserver.domain.user.persistence.domain.value.Password
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Column
+import org.springframework.data.relational.core.mapping.Embedded
 import org.springframework.data.relational.core.mapping.Table
 import org.springframework.security.core.GrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
@@ -11,19 +13,18 @@ import java.util.*
 class User (
     @Id
     @Column("user_id")
-    val id: String? = null,
+    var id: String? = null,
     @Column("email")
     val email: String,
-    @Column("password")
-    @JvmField
-    val password: String
+    @Embedded.Empty
+    val password: Password
 ): UserDetails {
     override fun getAuthorities(): MutableCollection<out GrantedAuthority> {
         return Collections.emptyList()
     }
 
     override fun getPassword(): String {
-        return password
+        return password.value
     }
 
     override fun getUsername(): String {
