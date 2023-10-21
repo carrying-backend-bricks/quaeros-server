@@ -26,7 +26,7 @@ class JwtProvider {
     fun generateToken(user: User): String {
         val now: Instant = Instant.now()
         return Jwts.builder()
-            .setSubject(user.email)
+            .setSubject(user.id)
             .setIssuedAt(Date.from(now))
             .setExpiration(Date.from(now.plus(Duration.ofDays(3))))
             .signWith(key)
@@ -37,7 +37,7 @@ class JwtProvider {
         return Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token).body
     }
 
-    fun getEmailFormToken(token: String): String {
+    fun getIdFormToken(token: String): String {
         return getAllClaimsFromToken(token).subject
     }
 

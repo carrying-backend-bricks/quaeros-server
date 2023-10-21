@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component
 class UserReadConverter: Converter<Row, User> {
     override fun convert(source: Row): User? {
         return User(
-            id = source.get("user_id") as String,
+            id = source.get("user_id")?.toString(),
             email = source.get("email") as String,
             password = Password(
                 value = source.get("password") as String

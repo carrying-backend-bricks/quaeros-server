@@ -46,6 +46,7 @@ class WebSecurityConfig (
             .pathMatchers(HttpMethod.GET, "/snippet/{id}").permitAll()
             .pathMatchers(HttpMethod.POST, "/snippet").authenticated()
             .pathMatchers(HttpMethod.POST,"/user").permitAll()
+            .pathMatchers(HttpMethod.GET, "/user").permitAll()
             .anyExchange().authenticated()
             .and().build()
     }
