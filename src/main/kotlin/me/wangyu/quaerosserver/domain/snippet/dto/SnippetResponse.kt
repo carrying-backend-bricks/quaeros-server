@@ -1,6 +1,6 @@
-package me.wangyu.quaerosserver.domain.snippets.dto
+package me.wangyu.quaerosserver.domain.snippet.dto
 
-import me.wangyu.quaerosserver.domain.snippets.persistence.domain.Snippet
+import me.wangyu.quaerosserver.domain.snippet.persistence.domain.Snippet
 
 data class SnippetResponse(
     val id: String?,

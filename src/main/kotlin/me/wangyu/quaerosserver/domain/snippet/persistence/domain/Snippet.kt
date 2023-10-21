@@ -1,4 +1,4 @@
-package me.wangyu.quaerosserver.domain.snippets.persistence.domain
+package me.wangyu.quaerosserver.domain.snippet.persistence.domain
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Column

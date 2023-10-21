@@ -1,9 +1,9 @@
-package me.wangyu.quaerosserver.domain.snippets.service.query
+package me.wangyu.quaerosserver.domain.snippet.service.query
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import me.wangyu.quaerosserver.domain.snippets.dto.SnippetResponse
-import me.wangyu.quaerosserver.domain.snippets.persistence.dao.SnippetRepository
+import me.wangyu.quaerosserver.domain.snippet.dto.SnippetResponse
+import me.wangyu.quaerosserver.domain.snippet.persistence.dao.SnippetRepository
 import org.springframework.stereotype.Service
 
 @Service

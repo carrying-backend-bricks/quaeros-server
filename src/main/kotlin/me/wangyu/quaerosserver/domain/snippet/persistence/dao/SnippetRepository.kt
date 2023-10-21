@@ -1,6 +1,6 @@
-package me.wangyu.quaerosserver.domain.snippets.persistence.dao
+package me.wangyu.quaerosserver.domain.snippet.persistence.dao
 
-import me.wangyu.quaerosserver.domain.snippets.persistence.domain.Snippet
+import me.wangyu.quaerosserver.domain.snippet.persistence.domain.Snippet
 import org.springframework.data.repository.kotlin.CoroutineCrudRepository
 import org.springframework.stereotype.Repository
 

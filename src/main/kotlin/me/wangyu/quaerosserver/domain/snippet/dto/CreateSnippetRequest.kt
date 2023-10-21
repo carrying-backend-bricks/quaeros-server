@@ -1,4 +1,4 @@
-package me.wangyu.quaerosserver.domain.snippets.dto
+package me.wangyu.quaerosserver.domain.snippet.dto
 
 data class CreateSnippetRequest(
     val title: String,

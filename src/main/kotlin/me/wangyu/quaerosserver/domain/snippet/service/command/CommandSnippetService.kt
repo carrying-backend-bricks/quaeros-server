@@ -1,8 +1,8 @@
-package me.wangyu.quaerosserver.domain.snippets.service.command
+package me.wangyu.quaerosserver.domain.snippet.service.command
 
-import me.wangyu.quaerosserver.domain.snippets.persistence.domain.Snippet
-import me.wangyu.quaerosserver.domain.snippets.persistence.dao.SnippetRepository
-import me.wangyu.quaerosserver.domain.snippets.dto.CreateSnippetRequest
+import me.wangyu.quaerosserver.domain.snippet.persistence.domain.Snippet
+import me.wangyu.quaerosserver.domain.snippet.persistence.dao.SnippetRepository
+import me.wangyu.quaerosserver.domain.snippet.dto.CreateSnippetRequest
 import org.springframework.stereotype.Service
 
 @Service

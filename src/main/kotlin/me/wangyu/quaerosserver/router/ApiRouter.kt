@@ -1,6 +1,6 @@
 package me.wangyu.quaerosserver.router
 
-import me.wangyu.quaerosserver.domain.snippets.handler.SnippetHandler
+import me.wangyu.quaerosserver.domain.snippet.handler.SnippetHandler
 import me.wangyu.quaerosserver.domain.user.handler.UserHandler
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
