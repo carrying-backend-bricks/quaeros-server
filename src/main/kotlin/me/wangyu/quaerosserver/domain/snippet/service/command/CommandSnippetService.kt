@@ -2,7 +2,7 @@ package me.wangyu.quaerosserver.domain.snippet.service.command
 
 import me.wangyu.quaerosserver.domain.snippet.persistence.domain.Snippet
 import me.wangyu.quaerosserver.domain.snippet.persistence.dao.SnippetRepository
-import me.wangyu.quaerosserver.domain.snippet.dto.CreateSnippetRequest
+import me.wangyu.quaerosserver.domain.snippet.dto.request.CreateSnippetRequest
 import org.springframework.stereotype.Service
 
 @Service

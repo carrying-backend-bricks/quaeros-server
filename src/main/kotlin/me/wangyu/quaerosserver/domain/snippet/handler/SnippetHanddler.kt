@@ -1,7 +1,7 @@
 package me.wangyu.quaerosserver.domain.snippet.handler
 
 import kotlinx.coroutines.reactive.awaitFirstOrNull
-import me.wangyu.quaerosserver.domain.snippet.dto.CreateSnippetRequest
+import me.wangyu.quaerosserver.domain.snippet.dto.request.CreateSnippetRequest
 import me.wangyu.quaerosserver.domain.snippet.service.command.CommandSnippetService
 import me.wangyu.quaerosserver.domain.snippet.service.query.QuerySnippetService
 import org.springframework.http.HttpStatus

@@ -1,4 +1,4 @@
-package me.wangyu.quaerosserver.domain.snippet.dto
+package me.wangyu.quaerosserver.domain.snippet.dto.response
 
 import me.wangyu.quaerosserver.domain.snippet.persistence.domain.Snippet
 

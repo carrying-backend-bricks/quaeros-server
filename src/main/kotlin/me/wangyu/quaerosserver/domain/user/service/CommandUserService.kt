@@ -1,6 +1,6 @@
 package me.wangyu.quaerosserver.domain.user.service
 
-import me.wangyu.quaerosserver.domain.user.dto.UserRequest
+import me.wangyu.quaerosserver.domain.user.dto.request.UserRequest
 import me.wangyu.quaerosserver.domain.user.persistence.dao.UserRepository
 import me.wangyu.quaerosserver.domain.user.persistence.domain.User
 import me.wangyu.quaerosserver.domain.user.persistence.domain.value.Password

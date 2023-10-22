@@ -1,4 +1,4 @@
-package me.wangyu.quaerosserver.domain.user.dto
+package me.wangyu.quaerosserver.domain.user.dto.request
 
 data class UserRequest (
     val email: String,

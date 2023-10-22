@@ -1,8 +1,8 @@
 package me.wangyu.quaerosserver.domain.user.handler
 
 import kotlinx.coroutines.reactive.awaitFirstOrNull
-import me.wangyu.quaerosserver.domain.user.dto.TokenResponse
-import me.wangyu.quaerosserver.domain.user.dto.UserRequest
+import me.wangyu.quaerosserver.domain.user.dto.response.TokenResponse
+import me.wangyu.quaerosserver.domain.user.dto.request.UserRequest
 import me.wangyu.quaerosserver.domain.user.service.CommandUserService
 import me.wangyu.quaerosserver.domain.user.service.LoginUserService
 import org.springframework.http.HttpStatus
