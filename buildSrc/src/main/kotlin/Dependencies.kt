@@ -1,7 +1,6 @@
 enum class ImplementationType(val originalName: String) {
     IMPLEMENTATION("implementation"),
     TEST_IMPLEMENTATION("testImplementation"),
-    KAPT("kapt"),
     RUNTIME_ONLY("runtimeOnly")
 
 }
@@ -11,12 +10,9 @@ interface Libraries {
 
     object Kotlin : Libraries {
         private const val KOTLIN_REFLECT = "org.jetbrains.kotlin:kotlin-reflect"
-        private const val KOTLIN_STDLIB = "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 
         override fun dependencies() = listOf(
             KOTLIN_REFLECT to ImplementationType.IMPLEMENTATION,
-            KOTLIN_STDLIB to ImplementationType.IMPLEMENTATION,
-
         )
     }
 
@@ -79,6 +75,5 @@ interface Libraries {
             JWT_IMPL to ImplementationType.RUNTIME_ONLY,
             JWT_JACKSON to ImplementationType.RUNTIME_ONLY
         )
-
     }
 }
